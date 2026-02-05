@@ -4,7 +4,7 @@ import joblib
 import os
 
 # Check if the model file exists
-if not os.path.exists("movie_decision_tree_model.pkl"):
+if not os.path.exists("decision_tree_model.pkl"):
     st.error("Model file not found!")
 else:
     # Load the trained model
@@ -12,7 +12,7 @@ else:
 
 # Load label encoders
 label_encoders = {}
-df = pd.read_csv("movie_interest_data.csv")  # Make sure the dataset file is in the same directory
+df = pd.read_csv("Task_Dataset_Movie_Interests_DecisionTree.csv")  # Make sure the dataset file is in the same directory
 X = df.drop("Interest", axis=1)
 
 # Load the label encoders for each categorical column
