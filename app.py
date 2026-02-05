@@ -8,7 +8,7 @@ if not os.path.exists("movie_decision_tree_model.pkl"):
     st.error("Model file not found!")
 else:
     # Load the trained model
-    model = joblib.load("movie_decision_tree_model.pkl")
+    model = joblib.load("decision_tree_model.pkl")
 
 # Load label encoders
 label_encoders = {}
