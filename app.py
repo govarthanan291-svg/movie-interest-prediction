@@ -13,7 +13,7 @@ st.write("Decision Tree Model using Movie Interest Dataset")
 model = joblib.load("movie_decision_tree_model.pkl")
 
 # Load dataset (to get feature names and label encoders)
-df = pd.read_csv("Task_Dataset_Movie_Interests_DecisionTree.csv")
+df = pd.read_csv("movie_decision_tree_model.pkl")
 
 # Separate features (same as training)
 X = df.drop("Interest", axis=1)
